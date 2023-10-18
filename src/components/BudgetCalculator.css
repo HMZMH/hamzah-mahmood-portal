@@ -1,0 +1,50 @@
+.budget-calculator {
+  display: flex;
+  justify-content: space-between;
+  width: 600px; /* Adjust the width as needed */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.column h2 {
+  font-size: 24px;
+}
+
+.input-container {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.balance {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #008000; /* Green color for positive balance */
+}
+
+.chart {
+  /* Style your chart here (e.g., using a chart library like Chart.js) */
+}

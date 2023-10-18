@@ -1,11 +1,11 @@
-import KanbanBoard from './KanbanBoard';
-import './Dashboard.css';
+import BudgetCalculator from './BudgetCalculator';
+import './BudgetCalculator.css';
 
 const Dashboard = () => {
     return(
         <div>
 
-            <KanbanBoard/>
+            <BudgetCalculator/>
         
         </div>
     );
