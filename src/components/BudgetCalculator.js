@@ -26,7 +26,7 @@ const BudgetCalculator = () => {
     'Household Maintenance': 0,
     'Mobile Contract': 0,
     'Internet Broadband': 0,
-    'TV Entertainment': 0,
+    'Home Entertainment': 0,
     'Grocery Shopping': 0,
     'Outside Entertainment': 0,
     'Outside Food': 0,

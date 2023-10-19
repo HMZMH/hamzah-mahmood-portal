@@ -2,22 +2,22 @@
   display: flex;
   justify-content: space-between;
   width: 90vw;
-  background-color: #ffffff;
+  background-color: rgb(255,255,255,0.5);
   border-radius: 9px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: background-color 0.3s, box-shadow 0.3s;
   margin: 20px auto;
   padding: 20px;
-  height: 77.5vh; /* Fixed height */
+  height: 77.5vh;
 }
 
 .column {
   flex: 2;
-  padding: 20px;
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
-  overflow-y: auto; /* Enable vertical scrolling for columns if content overflows */
+  padding: 10px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  overflow-y: auto;
   min-width: fit-content;
 }
 
@@ -59,9 +59,9 @@ input:focus {
 
 button.delete-icon {
   margin-left: 10px;
-  color: #ff6666;
-  border: 1px solid #ff6666;
-  border-radius: 5px;
+  background-color: #ffffff;
+  border-radius: 9px/8px;
+  border: 1px solid #e5e5e5;
   padding: 5px 10px;
   cursor: pointer;
   font-size: 18px;
@@ -69,9 +69,9 @@ button.delete-icon {
 
 button.rename-icon {
   margin-left: 10px;
-  color: #33cc33;
-  border: 1px solid #33cc33;
-  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 9px/8px;
   padding: 5px 10px;
   cursor: pointer;
   font-size: 18px;
