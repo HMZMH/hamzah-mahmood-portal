@@ -105,6 +105,22 @@ const BudgetCalculator = () => {
     return `£${amount.toFixed(2)}`;
   };
 
+  const resetFields = () => {
+    const resetIncome = Object.keys(income).reduce((acc, category) => {
+      acc[category] = 0;
+      return acc;
+    }, {});
+
+    const resetExpenses = Object.keys(expenses).reduce((acc, category) => {
+      acc[category] = 0;
+      return acc;
+    }, {});
+
+    setIncome(resetIncome);
+    setExpenses(resetExpenses);
+    updateBalance(resetIncome, resetExpenses);
+  };
+
   return (
     <div className="budget-calculator">
       
@@ -157,8 +173,11 @@ const BudgetCalculator = () => {
           <br/>
           <p style={{fontSize:'20px', color:'darkcyan'}}>{formatCurrency(balance)}</p>
         </div>
+        <button className="add-new-field" onClick={resetFields}>
+        Reset
+      </button>
       </div>
-      <div className="chart"></div>
+
     </div>
   );
 };
