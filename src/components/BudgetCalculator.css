@@ -12,6 +12,20 @@
   height: 77.5vh;
 }
 
+.calculator-charts {
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+  width: 90vw;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 9px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin: 20px auto;
+  padding: 20px;
+  height: 77.5vh;
+}
+
 .column {
   flex: 2;
   padding: 10px;
