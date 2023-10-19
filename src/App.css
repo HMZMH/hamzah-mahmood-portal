@@ -1,16 +1,21 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to top right, cyan, darkcyan);
+  background-image: linear-gradient(to top right, darkcyan, white);
   background-attachment: fixed;
   background-repeat: no-repeat;
   margin: 0;
   padding: 2.5%;
 }
 
-h1 {
-  font-size: 24px;
-  color: #333;
-  margin: 0;
-  padding: 10px 0;
-  text-align: center;
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+  background-color: rgb(255, 255, 255); /* Adjust opacity as needed */
+  border-radius: 9px/8px;
+}
+
+/* Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  border-radius: 9px/8px;
+  background-color: rgb(240, 240, 240); /* Adjust opacity as needed */
 }

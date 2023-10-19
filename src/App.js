@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React, { useEffect, useState } from 'react';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
-import Registration from './components/Registration'; // Import the Registration component
-import { auth } from './Firebase'; // Import the 'auth' object
+import Registration from './components/Registration';
+import { auth } from './Firebase';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -23,13 +23,13 @@ function App() {
 
   return (
     <div>
-      <h1>Your App Name</h1>
+      <h2>{user ? `Welcome, ${user.email}` : 'Your App Name'}</h2>
       {user ? (
         <Dashboard />
       ) : (
         <div>
           <Login />
-          <Registration /> {/* Add the Registration component */}
+          <Registration />
         </div>
       )}
     </div>

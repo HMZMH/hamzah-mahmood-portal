@@ -1,0 +1,18 @@
+.dashboard-div{
+    margin-top: 50px;
+}
+
+.sign-out-button {
+    background-color: #3399ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .sign-out-button:hover {
+    background-color: #2676e5;
+  }

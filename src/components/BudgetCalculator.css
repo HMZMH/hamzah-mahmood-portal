@@ -1,50 +1,98 @@
 .budget-calculator {
   display: flex;
   justify-content: space-between;
-  width: 600px; /* Adjust the width as needed */
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 90vw;
+  background-color: #ffffff;
+  border-radius: 9px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin: 20px auto;
+  padding: 20px;
+  height: 77.5vh; /* Fixed height */
 }
 
 .column {
-  flex: 1;
+  flex: 2;
   padding: 20px;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  overflow-y: auto; /* Enable vertical scrolling for columns if content overflows */
+  min-width: fit-content;
 }
 
 .column h2 {
   font-size: 24px;
+  margin-bottom: 15px;
+  color: #333333;
 }
 
 .input-container {
-  margin: 10px 0;
-}
-
-label {
-  font-weight: bold;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border: 1px solid #3399ff;
+}
+
+.label, p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #777777;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+}
+
+button.delete-icon {
+  margin-left: 10px;
+  color: #ff6666;
+  border: 1px solid #ff6666;
   border-radius: 5px;
-}
-
-.balance {
-  margin-top: 20px;
-}
-
-h3 {
+  padding: 5px 10px;
+  cursor: pointer;
   font-size: 18px;
 }
 
-p {
-  font-size: 20px;
-  font-weight: bold;
-  color: #008000; /* Green color for positive balance */
+button.rename-icon {
+  margin-left: 10px;
+  color: #33cc33;
+  border: 1px solid #33cc33;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.chart {
-  /* Style your chart here (e.g., using a chart library like Chart.js) */
+.add-new-field {
+  background-color: #3399ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.add-new-field:hover {
+  background-color: #2676e5;
+}
+
+.button-icon:focus {
+  outline: none;
 }
